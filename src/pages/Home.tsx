@@ -16,6 +16,7 @@ import {
   Smartphone,
   Sun,
   Moon,
+  FileText,
 } from "lucide-react";
 import portrait from "../assets/d20210aa9445e5e607e401fd25046fe77293a792.png";
 
@@ -296,11 +297,10 @@ export default function Home() {
                   </a>
                   <a
                     className="hero-github"
-                    href="https://github.com/ratul1918"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="/cv/rafiur-rahman-cv.pdf"
+                    download="Rafiur-Rahman-CV.pdf"
                   >
-                    GitHub <ArrowUpRight size={16} />
+                    Download CV <FileText size={16} />
                   </a>
                 </motion.div>
               </div>
@@ -457,6 +457,16 @@ export default function Home() {
               >
                 A little more on LinkedIn <ArrowUpRight size={17} />
               </a>
+              <div className="cv-resource">
+                <div>
+                  <h3>Curriculum vitae</h3>
+                  <p>Education, academic projects, and communication skills.</p>
+                </div>
+                <div className="cv-links">
+                  <a href="/cv/rafiur-rahman-cv.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
+                  <a href="/cv/rafiur-rahman-cv.pdf" download="Rafiur-Rahman-CV.pdf">Download CV</a>
+                </div>
+              </div>
             </motion.div>
           </section>
           <section className="expertise section-shell" id="expertise">
