@@ -2,7 +2,7 @@
 
 A personal portfolio for a CSE student, development learner, vibe coder, and aspiring researcher exploring artificial intelligence, machine learning, and computer vision.
 
-**Live site:** [rafiurrahman1918.vercel.app](https://rafiurrahman1918.vercel.app)
+**Live site:** [RafiurRahman](https://ratul1918.github.io/RafiurRahman/)
 
 ## What’s inside
 
@@ -27,8 +27,8 @@ The repository retains older template components and dependencies, but the curre
 Use Node.js 22 LTS and npm.
 
 ```sh
-git clone https://github.com/ratul1918/My_Portfolio.git
-cd My_Portfolio
+git clone https://github.com/ratul1918/RafiurRahman.git
+cd RafiurRahman
 npm ci
 npm run dev
 ```
@@ -49,7 +49,7 @@ No environment variables or API keys are required. The application uses section 
 
 ## CV
 
-[View or download the CV](https://rafiurrahman1918.vercel.app/cv/rafiur-rahman-cv.pdf). The homepage includes a download link and an About-section PDF link.
+[View or download the CV](https://ratul1918.github.io/RafiurRahman/cv/rafiur-rahman-cv.pdf). The homepage includes a download link and an About-section PDF link.
 
 The editable LaTeX source is `public/cv/rafiur-rahman-cv.tex`. To rebuild it after editing (requires a LaTeX installation):
 
@@ -60,7 +60,7 @@ pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/portfoli
 cp /tmp/portfolio-cv-build/rafiur-rahman-cv.pdf public/cv/rafiur-rahman-cv.pdf
 ```
 
-Review the generated PDF before committing. Vite copies `public/cv/` into the production build; Vercel does not need a LaTeX installation.
+Review the generated PDF before committing. Vite copies `public/cv/` into the production build; GitHub Actions uses the committed PDF.
 
 ## Edit content
 
@@ -72,20 +72,13 @@ Review the generated PDF before committing. Vite copies `public/cv/` into the pr
 | `src/index.css` | Layout, animations, responsive breakpoints, and both themes |
 | `src/assets/` | Local portrait image |
 | `index.html` | Page title, social metadata, and initial theme selection |
-| `vercel.json` | Hosting settings, asset caching, and social redirects |
+| `.github/workflows/pages.yml` | Build and deploy the portfolio to GitHub Pages |
 
 Keep descriptions and statuses accurate when updating projects. Only add demo links that point to an actual deployment. Contact links open the visitor’s email client; copying an address does not send a message.
 
 ## Deployment
 
-The existing hosting target is Vercel. The repository configuration specifies:
-
-- Framework: Vite
-- Build: `npm run build`
-- Output: `dist`
-- Install: `npm ci`
-
-The committed lockfile makes dependency installation reproducible. A push to `main` should trigger the existing Vercel Git integration when it is enabled. See [DEPLOYMENT.md](DEPLOYMENT.md) for deployment verification and troubleshooting.
+GitHub Actions publishes the Vite production build to GitHub Pages on pushes to `main`. See [DEPLOYMENT.md](DEPLOYMENT.md) for deployment and search indexing details.
 
 ## Validation notes
 

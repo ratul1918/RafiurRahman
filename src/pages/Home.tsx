@@ -274,11 +274,9 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9 }}
                 >
-                  Thoughtful code.
+                  Rafiur
                   <br />
-                  Meaningful
-                  <br />
-                  <span className="hero-accent">experiences.</span>
+                  <span className="hero-accent">Rahman</span>
                   <span className="heading-dot">✳</span>
                 </motion.h1>
                 <motion.div
@@ -297,7 +295,7 @@ export default function Home() {
                   </a>
                   <a
                     className="hero-github"
-                    href="/cv/rafiur-rahman-cv.pdf"
+                    href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`}
                     download="Rafiur-Rahman-CV.pdf"
                   >
                     Download CV <FileText size={16} />
@@ -463,8 +461,8 @@ export default function Home() {
                   <p>Education, technical skills, selected projects, and research interests.</p>
                 </div>
                 <div className="cv-links">
-                  <a href="/cv/rafiur-rahman-cv.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
-                  <a href="/cv/rafiur-rahman-cv.pdf" download="Rafiur-Rahman-CV.pdf">Download CV</a>
+                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`} target="_blank" rel="noreferrer">View CV (PDF)</a>
+                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`} download="Rafiur-Rahman-CV.pdf">Download CV</a>
                 </div>
               </div>
             </motion.div>
