@@ -460,7 +460,7 @@ export default function Home() {
               <div className="cv-resource">
                 <div>
                   <h3>Curriculum vitae</h3>
-                  <p>Education, academic projects, and communication skills.</p>
+                  <p>Education, technical skills, selected projects, and research interests.</p>
                 </div>
                 <div className="cv-links">
                   <a href="/cv/rafiur-rahman-cv.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
