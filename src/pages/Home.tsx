@@ -295,8 +295,8 @@ export default function Home() {
                   </a>
                   <a
                     className="hero-github"
-                    href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`}
-                    download="Rafiur-Rahman-CV.pdf"
+                    href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-portfolio-cv.pdf`}
+                    download="Rafiur-Rahman-Portfolio-CV.pdf"
                   >
                     Download CV <FileText size={16} />
                   </a>
@@ -461,8 +461,8 @@ export default function Home() {
                   <p>Education, technical skills, selected projects, and research interests.</p>
                 </div>
                 <div className="cv-links">
-                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`} target="_blank" rel="noreferrer">View CV (PDF)</a>
-                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-cv.pdf`} download="Rafiur-Rahman-CV.pdf">Download CV</a>
+                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-portfolio-cv.pdf`} target="_blank" rel="noreferrer">View CV (PDF)</a>
+                  <a href={`${import.meta.env.BASE_URL}cv/rafiur-rahman-portfolio-cv.pdf`} download="Rafiur-Rahman-Portfolio-CV.pdf">Download CV</a>
                 </div>
               </div>
             </motion.div>

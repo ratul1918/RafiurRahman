@@ -49,7 +49,7 @@ No environment variables or API keys are required. The application uses section 
 
 ## CV
 
-[View or download the CV](https://ratul1918.github.io/RafiurRahman/cv/rafiur-rahman-cv.pdf). The homepage includes a download link and an About-section PDF link.
+[View or download the CV](https://ratul1918.github.io/RafiurRahman/cv/rafiur-rahman-portfolio-cv.pdf). The homepage includes a download link and an About-section PDF link.
 
 The editable LaTeX source is `public/cv/rafiur-rahman-cv.tex`. To rebuild it after editing (requires a LaTeX installation):
 
@@ -57,7 +57,7 @@ The editable LaTeX source is `public/cv/rafiur-rahman-cv.tex`. To rebuild it aft
 mkdir -p /tmp/portfolio-cv-build
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/portfolio-cv-build public/cv/rafiur-rahman-cv.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/portfolio-cv-build public/cv/rafiur-rahman-cv.tex
-cp /tmp/portfolio-cv-build/rafiur-rahman-cv.pdf public/cv/rafiur-rahman-cv.pdf
+cp /tmp/portfolio-cv-build/rafiur-rahman-cv.pdf public/cv/rafiur-rahman-portfolio-cv.pdf
 ```
 
 Review the generated PDF before committing. Vite copies `public/cv/` into the production build; GitHub Actions uses the committed PDF.
